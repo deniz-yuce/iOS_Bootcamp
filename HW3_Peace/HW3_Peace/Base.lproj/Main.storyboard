@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jY8-il-EUA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW3_Peace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yogaResim2" translatesAutoresizingMaskIntoConstraints="NO" id="eD2-32-Pvz">
+                                <rect key="frame" x="113.5" y="104" width="187" height="187.5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="16"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="GRQ-jd-2Ku">
+                                <rect key="frame" x="51" y="307.5" width="312.5" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABR-tc-0FU">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="31"/>
+                                        <color key="backgroundColor" name="buttonRenk"/>
+                                        <color key="tintColor" name="yaziRenk1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Relaxing"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgH-RS-zgO">
+                                        <rect key="frame" x="109.5" y="0.0" width="93.5" height="31"/>
+                                        <color key="backgroundColor" name="buttonRenk"/>
+                                        <color key="tintColor" name="yaziRenk1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Warm"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dor-v6-vGI">
+                                        <rect key="frame" x="219" y="0.0" width="93.5" height="31"/>
+                                        <color key="backgroundColor" name="buttonRenk"/>
+                                        <color key="tintColor" name="yaziRenk1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Productive"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listen to relaxing sound alongside light candle sounds." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5I-tf-iAv">
+                                <rect key="frame" x="32" y="354.5" width="350" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="yaziRenk1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listen to wave sounds and find your inner peace." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nex-L5-sh9">
+                                <rect key="frame" x="32" y="715.5" width="350" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="yaziRenk1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK0-cr-5Ah">
+                                <rect key="frame" x="165.5" y="411.5" width="83" height="37"/>
+                                <color key="backgroundColor" name="anaRenk"/>
+                                <color key="tintColor" name="yaziRenk1"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Listen">
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yogaResim1" translatesAutoresizingMaskIntoConstraints="NO" id="0FD-3s-Fxg">
+                                <rect key="frame" x="113" y="464.5" width="188" height="188"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="16"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="e4m-nn-4dH">
+                                <rect key="frame" x="120" y="668.5" width="174" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sq7-xh-jbr">
+                                        <rect key="frame" x="0.0" y="0.0" width="79" height="31"/>
+                                        <color key="backgroundColor" name="buttonRenk"/>
+                                        <color key="tintColor" name="yaziRenk1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Relaxing"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8y-0v-sKd">
+                                        <rect key="frame" x="95" y="0.0" width="79" height="31"/>
+                                        <color key="backgroundColor" name="buttonRenk"/>
+                                        <color key="tintColor" name="yaziRenk1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Peace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wm-qh-8bH">
+                                <rect key="frame" x="165.5" y="772.5" width="83" height="37"/>
+                                <color key="backgroundColor" name="anaRenk"/>
+                                <color key="tintColor" name="yaziRenk1"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Listen">
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="backgroung"/>
+                        <constraints>
+                            <constraint firstItem="GRQ-jd-2Ku" firstAttribute="top" secondItem="eD2-32-Pvz" secondAttribute="bottom" constant="16" id="1gX-qt-9W5"/>
+                            <constraint firstAttribute="trailing" secondItem="E5I-tf-iAv" secondAttribute="trailing" constant="32" id="DYJ-XH-9Dt"/>
+                            <constraint firstItem="Nex-L5-sh9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="Lpm-ea-lbI"/>
+                            <constraint firstItem="Nex-L5-sh9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mgi-o7-iXe"/>
+                            <constraint firstItem="eD2-32-Pvz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Nsq-5f-MUP"/>
+                            <constraint firstItem="E5I-tf-iAv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WJp-8J-CyN"/>
+                            <constraint firstItem="fK0-cr-5Ah" firstAttribute="top" secondItem="E5I-tf-iAv" secondAttribute="bottom" constant="16" id="Wk8-Go-7Rv"/>
+                            <constraint firstItem="fK0-cr-5Ah" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XLS-jv-hUo"/>
+                            <constraint firstItem="1wm-qh-8bH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YLg-rG-Mqk"/>
+                            <constraint firstItem="e4m-nn-4dH" firstAttribute="top" secondItem="0FD-3s-Fxg" secondAttribute="bottom" constant="16" id="a4p-96-TMe"/>
+                            <constraint firstItem="E5I-tf-iAv" firstAttribute="top" secondItem="GRQ-jd-2Ku" secondAttribute="bottom" constant="16" id="aqf-Hf-hBN"/>
+                            <constraint firstItem="E5I-tf-iAv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="eOu-Ob-ufa"/>
+                            <constraint firstItem="1wm-qh-8bH" firstAttribute="top" secondItem="Nex-L5-sh9" secondAttribute="bottom" constant="16" id="eT4-0O-ddN"/>
+                            <constraint firstItem="0FD-3s-Fxg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="et2-BV-RxU"/>
+                            <constraint firstItem="0FD-3s-Fxg" firstAttribute="top" secondItem="fK0-cr-5Ah" secondAttribute="bottom" constant="16" id="f8s-RQ-fWz"/>
+                            <constraint firstItem="e4m-nn-4dH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fDd-gX-zcK"/>
+                            <constraint firstItem="eD2-32-Pvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j5I-K6-JJ6"/>
+                            <constraint firstAttribute="trailing" secondItem="Nex-L5-sh9" secondAttribute="trailing" constant="32" id="mLg-4l-Oiz"/>
+                            <constraint firstItem="Nex-L5-sh9" firstAttribute="top" secondItem="e4m-nn-4dH" secondAttribute="bottom" constant="16" id="pLp-wR-JBS"/>
+                            <constraint firstItem="GRQ-jd-2Ku" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wgt-Cn-N5S"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="16"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="7xB-Qp-9dU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.91304347826087" y="56.919642857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bKS-4Q-HO2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jY8-il-EUA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nRa-gB-Y5F">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="U3j-dm-ILd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLn-by-y1e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="56.919642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="yogaResim1" width="188" height="188"/>
+        <image name="yogaResim2" width="187" height="187.5"/>
+        <namedColor name="anaRenk">
+            <color red="0.6940000057220459" green="0.75300002098083496" blue="0.82700002193450928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroung">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonRenk">
+            <color red="0.94900000095367432" green="0.62400001287460327" blue="0.55299997329711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yaziRenk1">
+            <color red="0.15700000524520874" green="0.22400000691413879" blue="0.34900000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

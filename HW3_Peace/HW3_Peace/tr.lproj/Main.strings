@@ -1,0 +1,28 @@
+
+/* Class = "UIButton"; configuration.title = "Listen"; ObjectID = "1wm-qh-8bH"; */
+"1wm-qh-8bH.configuration.title" = "Dinle";
+
+/* Class = "UIButton"; configuration.title = "Relaxing"; ObjectID = "ABR-tc-0FU"; */
+"ABR-tc-0FU.configuration.title" = "Rahatlatıcı";
+
+/* Class = "UIButton"; configuration.title = "Peace"; ObjectID = "B8y-0v-sKd"; */
+"B8y-0v-sKd.configuration.title" = "Sakin";
+
+/* Class = "UIButton"; configuration.title = "Productive"; ObjectID = "Dor-v6-vGI"; */
+"Dor-v6-vGI.configuration.title" = "Üretken";
+
+/* Class = "UILabel"; text = "Listen to relaxing sound alongside light candle sounds."; ObjectID = "E5I-tf-iAv"; */
+"E5I-tf-iAv.text" = "Hafif mum eşliğinde sakinleştirici sesleri dinle.";
+
+/* Class = "UILabel"; text = "Listen to wave sounds and find your inner peace."; ObjectID = "Nex-L5-sh9"; */
+"Nex-L5-sh9.text" = "Dalga seslerini dinlerken iç huzurunu bul.";
+
+/* Class = "UIButton"; configuration.title = "Relaxing"; ObjectID = "Sq7-xh-jbr"; */
+"Sq7-xh-jbr.configuration.title" = "Rahatlatıcı";
+
+/* Class = "UIButton"; configuration.title = "Warm"; ObjectID = "dgH-RS-zgO"; */
+"dgH-RS-zgO.configuration.title" = "Sıcak";
+
+/* Class = "UIButton"; configuration.title = "Listen"; ObjectID = "fK0-cr-5Ah"; */
+"fK0-cr-5Ah.configuration.title" = "Dinle";
+
