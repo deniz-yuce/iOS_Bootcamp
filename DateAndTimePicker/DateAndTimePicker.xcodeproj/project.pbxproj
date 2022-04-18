@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03BAED1E280C0D8500E686B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAED1D280C0D8500E686B4 /* AppDelegate.swift */; };
+		03BAED20280C0D8500E686B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAED1F280C0D8500E686B4 /* SceneDelegate.swift */; };
+		03BAED22280C0D8500E686B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAED21280C0D8500E686B4 /* ViewController.swift */; };
+		03BAED25280C0D8500E686B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BAED23280C0D8500E686B4 /* Main.storyboard */; };
+		03BAED27280C0D8600E686B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BAED26280C0D8600E686B4 /* Assets.xcassets */; };
+		03BAED2A280C0D8600E686B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BAED28280C0D8600E686B4 /* LaunchScreen.storyboard */; };
+		03BAED35280C0D8600E686B4 /* DateAndTimePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAED34280C0D8600E686B4 /* DateAndTimePickerTests.swift */; };
+		03BAED3F280C0D8600E686B4 /* DateAndTimePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAED3E280C0D8600E686B4 /* DateAndTimePickerUITests.swift */; };
+		03BAED41280C0D8600E686B4 /* DateAndTimePickerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAED40280C0D8600E686B4 /* DateAndTimePickerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03BAED31280C0D8600E686B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03BAED12280C0D8500E686B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03BAED19280C0D8500E686B4;
+			remoteInfo = DateAndTimePicker;
+		};
+		03BAED3B280C0D8600E686B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03BAED12280C0D8500E686B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03BAED19280C0D8500E686B4;
+			remoteInfo = DateAndTimePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03BAED1A280C0D8500E686B4 /* DateAndTimePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateAndTimePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03BAED1D280C0D8500E686B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03BAED1F280C0D8500E686B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03BAED21280C0D8500E686B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03BAED24280C0D8500E686B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03BAED26280C0D8600E686B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03BAED29280C0D8600E686B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03BAED2B280C0D8600E686B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BAED30280C0D8600E686B4 /* DateAndTimePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateAndTimePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03BAED34280C0D8600E686B4 /* DateAndTimePickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimePickerTests.swift; sourceTree = "<group>"; };
+		03BAED3A280C0D8600E686B4 /* DateAndTimePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateAndTimePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03BAED3E280C0D8600E686B4 /* DateAndTimePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimePickerUITests.swift; sourceTree = "<group>"; };
+		03BAED40280C0D8600E686B4 /* DateAndTimePickerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimePickerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03BAED17280C0D8500E686B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BAED2D280C0D8600E686B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BAED37280C0D8600E686B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03BAED11280C0D8500E686B4 = {
+			isa = PBXGroup;
+			children = (
+				03BAED1C280C0D8500E686B4 /* DateAndTimePicker */,
+				03BAED33280C0D8600E686B4 /* DateAndTimePickerTests */,
+				03BAED3D280C0D8600E686B4 /* DateAndTimePickerUITests */,
+				03BAED1B280C0D8500E686B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03BAED1B280C0D8500E686B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03BAED1A280C0D8500E686B4 /* DateAndTimePicker.app */,
+				03BAED30280C0D8600E686B4 /* DateAndTimePickerTests.xctest */,
+				03BAED3A280C0D8600E686B4 /* DateAndTimePickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03BAED1C280C0D8500E686B4 /* DateAndTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				03BAED1D280C0D8500E686B4 /* AppDelegate.swift */,
+				03BAED1F280C0D8500E686B4 /* SceneDelegate.swift */,
+				03BAED21280C0D8500E686B4 /* ViewController.swift */,
+				03BAED23280C0D8500E686B4 /* Main.storyboard */,
+				03BAED26280C0D8600E686B4 /* Assets.xcassets */,
+				03BAED28280C0D8600E686B4 /* LaunchScreen.storyboard */,
+				03BAED2B280C0D8600E686B4 /* Info.plist */,
+			);
+			path = DateAndTimePicker;
+			sourceTree = "<group>";
+		};
+		03BAED33280C0D8600E686B4 /* DateAndTimePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				03BAED34280C0D8600E686B4 /* DateAndTimePickerTests.swift */,
+			);
+			path = DateAndTimePickerTests;
+			sourceTree = "<group>";
+		};
+		03BAED3D280C0D8600E686B4 /* DateAndTimePickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03BAED3E280C0D8600E686B4 /* DateAndTimePickerUITests.swift */,
+				03BAED40280C0D8600E686B4 /* DateAndTimePickerUITestsLaunchTests.swift */,
+			);
+			path = DateAndTimePickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03BAED19280C0D8500E686B4 /* DateAndTimePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BAED44280C0D8600E686B4 /* Build configuration list for PBXNativeTarget "DateAndTimePicker" */;
+			buildPhases = (
+				03BAED16280C0D8500E686B4 /* Sources */,
+				03BAED17280C0D8500E686B4 /* Frameworks */,
+				03BAED18280C0D8500E686B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateAndTimePicker;
+			productName = DateAndTimePicker;
+			productReference = 03BAED1A280C0D8500E686B4 /* DateAndTimePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03BAED2F280C0D8600E686B4 /* DateAndTimePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BAED47280C0D8600E686B4 /* Build configuration list for PBXNativeTarget "DateAndTimePickerTests" */;
+			buildPhases = (
+				03BAED2C280C0D8600E686B4 /* Sources */,
+				03BAED2D280C0D8600E686B4 /* Frameworks */,
+				03BAED2E280C0D8600E686B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03BAED32280C0D8600E686B4 /* PBXTargetDependency */,
+			);
+			name = DateAndTimePickerTests;
+			productName = DateAndTimePickerTests;
+			productReference = 03BAED30280C0D8600E686B4 /* DateAndTimePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03BAED39280C0D8600E686B4 /* DateAndTimePickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BAED4A280C0D8600E686B4 /* Build configuration list for PBXNativeTarget "DateAndTimePickerUITests" */;
+			buildPhases = (
+				03BAED36280C0D8600E686B4 /* Sources */,
+				03BAED37280C0D8600E686B4 /* Frameworks */,
+				03BAED38280C0D8600E686B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03BAED3C280C0D8600E686B4 /* PBXTargetDependency */,
+			);
+			name = DateAndTimePickerUITests;
+			productName = DateAndTimePickerUITests;
+			productReference = 03BAED3A280C0D8600E686B4 /* DateAndTimePickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03BAED12280C0D8500E686B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					03BAED19280C0D8500E686B4 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					03BAED2F280C0D8600E686B4 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 03BAED19280C0D8500E686B4;
+					};
+					03BAED39280C0D8600E686B4 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 03BAED19280C0D8500E686B4;
+					};
+				};
+			};
+			buildConfigurationList = 03BAED15280C0D8500E686B4 /* Build configuration list for PBXProject "DateAndTimePicker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03BAED11280C0D8500E686B4;
+			productRefGroup = 03BAED1B280C0D8500E686B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03BAED19280C0D8500E686B4 /* DateAndTimePicker */,
+				03BAED2F280C0D8600E686B4 /* DateAndTimePickerTests */,
+				03BAED39280C0D8600E686B4 /* DateAndTimePickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03BAED18280C0D8500E686B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BAED2A280C0D8600E686B4 /* LaunchScreen.storyboard in Resources */,
+				03BAED27280C0D8600E686B4 /* Assets.xcassets in Resources */,
+				03BAED25280C0D8500E686B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BAED2E280C0D8600E686B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BAED38280C0D8600E686B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03BAED16280C0D8500E686B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BAED22280C0D8500E686B4 /* ViewController.swift in Sources */,
+				03BAED1E280C0D8500E686B4 /* AppDelegate.swift in Sources */,
+				03BAED20280C0D8500E686B4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BAED2C280C0D8600E686B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BAED35280C0D8600E686B4 /* DateAndTimePickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BAED36280C0D8600E686B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BAED3F280C0D8600E686B4 /* DateAndTimePickerUITests.swift in Sources */,
+				03BAED41280C0D8600E686B4 /* DateAndTimePickerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03BAED32280C0D8600E686B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03BAED19280C0D8500E686B4 /* DateAndTimePicker */;
+			targetProxy = 03BAED31280C0D8600E686B4 /* PBXContainerItemProxy */;
+		};
+		03BAED3C280C0D8600E686B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03BAED19280C0D8500E686B4 /* DateAndTimePicker */;
+			targetProxy = 03BAED3B280C0D8600E686B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03BAED23280C0D8500E686B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03BAED24280C0D8500E686B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03BAED28280C0D8600E686B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03BAED29280C0D8600E686B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03BAED42280C0D8600E686B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03BAED43280C0D8600E686B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03BAED45280C0D8600E686B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DateAndTimePicker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.DateAndTimePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03BAED46280C0D8600E686B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DateAndTimePicker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.DateAndTimePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03BAED48280C0D8600E686B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.DateAndTimePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DateAndTimePicker.app/DateAndTimePicker";
+			};
+			name = Debug;
+		};
+		03BAED49280C0D8600E686B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.DateAndTimePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DateAndTimePicker.app/DateAndTimePicker";
+			};
+			name = Release;
+		};
+		03BAED4B280C0D8600E686B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.DateAndTimePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DateAndTimePicker;
+			};
+			name = Debug;
+		};
+		03BAED4C280C0D8600E686B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.DateAndTimePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DateAndTimePicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03BAED15280C0D8500E686B4 /* Build configuration list for PBXProject "DateAndTimePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BAED42280C0D8600E686B4 /* Debug */,
+				03BAED43280C0D8600E686B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03BAED44280C0D8600E686B4 /* Build configuration list for PBXNativeTarget "DateAndTimePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BAED45280C0D8600E686B4 /* Debug */,
+				03BAED46280C0D8600E686B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03BAED47280C0D8600E686B4 /* Build configuration list for PBXNativeTarget "DateAndTimePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BAED48280C0D8600E686B4 /* Debug */,
+				03BAED49280C0D8600E686B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03BAED4A280C0D8600E686B4 /* Build configuration list for PBXNativeTarget "DateAndTimePickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BAED4B280C0D8600E686B4 /* Debug */,
+				03BAED4C280C0D8600E686B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03BAED12280C0D8500E686B4 /* Project object */;
+}
