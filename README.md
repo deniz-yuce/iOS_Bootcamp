@@ -1,1 +1,11 @@
-# iOS_Bootcamp
+# 2022 UPSchool IOS Bootcamp Material
+
+> In this repository there are lesson notes, lesson codes, and solutions to given homeworks will be added.
+
+
+
+## First week :
+
+- **VariablesAndStandartProgramming.playground:**   
+Variable types and conditional statemnts in Swift. 
+Contains homework #1 (Declaring variables with/without their types and printing them).
