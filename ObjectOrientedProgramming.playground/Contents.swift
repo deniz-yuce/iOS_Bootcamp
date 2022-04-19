@@ -262,6 +262,32 @@ print("Film kategori : \(f1.kategori!.kategori_ad!)") //composition - iç içe e
 print("Film yönetmen : \(f1.yonetmen!.yonetmen_ad!)")
 
 
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ INHERITANCE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+class Ev {
+    var pencereSayisi:Int?
+
+    init(pencereSayisi:Int) {
+        self.pencereSayisi = pencereSayisi
+    }
+}
+
+class Saray {
+    var kuleSayisi:Int?
+    
+    init(kuleSayisi:Int) {
+        self.kuleSayisi = kuleSayisi
+    }
+}
+
+class Villa {
+    var garajVarmi:Bool?
+
+    init(garajVarmi:Bool) {
+        self.garajVarmi = garajVarmi
+    }
+}
+
 
 
 //Homework #2
