@@ -6,6 +6,10 @@
 
 ## First week :
 
-- **VariablesAndStandartProgramming.playground:**   
-Variable types and conditional statemnts in Swift. 
-Contains homework #1 (Declaring variables with/without their types and printing them).
+- **VariablesAndStandartProgramming.playground:**    
+  - Variable types and conditional statemnts in Swift.  
+  - Contains homework #1 (Declaring variables with/without their types and printing them).  
+
+- **ObjectOrientedProgramming.playground:**
+  - Basics of object oriented programming. Classes, functions, enum, tuple.  
+  - Contains homework #2 (Using functions in classes)
