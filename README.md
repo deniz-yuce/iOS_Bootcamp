@@ -13,3 +13,9 @@
 - **ObjectOrientedProgramming.playground:**
   - Basics of object oriented programming. Classes, functions, enum, tuple.  
   - Contains homework #2 (Using functions in classes)
+
+
+## Second week :
+
+- **ObjectOrientedProgramming.playground:**
+  - Advanced Swift
