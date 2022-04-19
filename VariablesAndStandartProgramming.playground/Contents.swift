@@ -211,7 +211,34 @@ print(sonuc5) // the "d" inside became a String
  }
 
 //OPTIONAL - NULLABLE - NULL SAFETY
+// Writing nil variables, it needs to be initialized
 
+ var x = "merhaba"
+
+ var str:String? = nil // first option
+
+ var str1:String?  //second option that used widely
+
+ str1 = "Hello"
+
+// Nil or not checking mechanism:
+
+ if str1 != nil {
+     print(str1!) // optional unwrapping with !        //* * * * * * *//
+ }else {
+     print("str1 nil değer içeriyor")
+ }
+
+// Ideal Method - Optional binding
+
+// we are using tem variable
+
+ if let temp = str1 {                  // we can't change its value because we initialized with "let"
+     print(temp)                       // makes unwrapping automatically without putting !
+                                       // we can't do: temp = "Hello world"
+ } else {
+     print("str1 nil değer içeriyor")
+ }
 
 
 
