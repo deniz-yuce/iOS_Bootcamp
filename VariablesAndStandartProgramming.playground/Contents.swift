@@ -240,6 +240,16 @@ print(sonuc5) // the "d" inside became a String
      print("str1 nil değer içeriyor")
  }
 
+// we can also do it with if
+
+ if var temp = str1 {
+     print(temp)
+     temp = "Hello world"
+     print(temp) // since we are changing its value it's more reasonable to use var while initializing temp
+                 // if we didn't change its value we can use let
+ } else {
+     print("str1 nil değer içeriyor")
+ }
 
 
 // HomeWork #1
