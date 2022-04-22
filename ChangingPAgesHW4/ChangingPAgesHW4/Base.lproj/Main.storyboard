@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jHd-d4-J4Z">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChangingPagesHW4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOME PAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8m-3y-mwO">
+                                <rect key="frame" x="120.5" y="188" width="173" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhd-1u-xdH">
+                                <rect key="frame" x="138.5" y="374" width="137" height="32.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GO TO PAGE A">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pageAButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wDa-BP-56U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYg-Hv-2eS">
+                                <rect key="frame" x="138" y="556.5" width="138" height="32.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GO TO PAGE X">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pageXButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jUZ-GP-fUj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o8m-3y-mwO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CSW-b3-gbT"/>
+                            <constraint firstItem="Nhd-1u-xdH" firstAttribute="top" secondItem="o8m-3y-mwO" secondAttribute="bottom" constant="150" id="Ntz-8y-krm"/>
+                            <constraint firstItem="o8m-3y-mwO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="eWt-rZ-LxB"/>
+                            <constraint firstItem="lYg-Hv-2eS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kKA-ge-3QQ"/>
+                            <constraint firstItem="lYg-Hv-2eS" firstAttribute="top" secondItem="Nhd-1u-xdH" secondAttribute="bottom" constant="150" id="tqv-fJ-T3j"/>
+                            <constraint firstItem="Nhd-1u-xdH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xri-We-XcQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gr3-H2-33r"/>
+                    <connections>
+                        <segue destination="nSc-1b-96J" kind="show" identifier="toPageA" id="bLi-A2-rqo"/>
+                        <segue destination="Atv-G7-Yax" kind="show" identifier="toPageX" id="ptQ-8m-PKX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="69.642857142857139"/>
+        </scene>
+        <!--PageXVC-->
+        <scene sceneID="QtZ-H4-B4n">
+            <objects>
+                <viewController id="Atv-G7-Yax" customClass="PageXVC" customModule="ChangingPagesHW4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Jc-25-g7V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAGE X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9R-Mm-LIG">
+                                <rect key="frame" x="154.5" y="188" width="105" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXr-Hk-7x7">
+                                <rect key="frame" x="138" y="374" width="138" height="33"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GO TO PAGE Y">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pageYButton:" destination="Atv-G7-Yax" eventType="touchUpInside" id="Sce-7E-drt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QGK-Ey-doD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aXr-Hk-7x7" firstAttribute="top" secondItem="b9R-Mm-LIG" secondAttribute="bottom" constant="150" id="DqA-Po-r2V"/>
+                            <constraint firstItem="aXr-Hk-7x7" firstAttribute="centerX" secondItem="8Jc-25-g7V" secondAttribute="centerX" id="HSf-Ce-hFS"/>
+                            <constraint firstItem="b9R-Mm-LIG" firstAttribute="centerX" secondItem="8Jc-25-g7V" secondAttribute="centerX" id="OTw-yN-ID9"/>
+                            <constraint firstItem="b9R-Mm-LIG" firstAttribute="top" secondItem="QGK-Ey-doD" secondAttribute="top" constant="100" id="X03-52-GIb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="E37-hl-lDY"/>
+                    <connections>
+                        <segue destination="WcV-FZ-ACj" kind="show" identifier="toPageY" id="hn4-xo-y32"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JaX-nv-1OZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="477"/>
+        </scene>
+        <!--PageYVC-->
+        <scene sceneID="hfN-HO-85j">
+            <objects>
+                <viewController id="WcV-FZ-ACj" customClass="PageYVC" customModule="ChangingPagesHW4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lZb-1e-nz5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAGE Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtV-vu-j2B">
+                                <rect key="frame" x="155" y="188" width="104" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trd-3T-9pf">
+                                <rect key="frame" x="95" y="374" width="224" height="33"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GO BACK TO HOME PAGE">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButton:" destination="WcV-FZ-ACj" eventType="touchUpInside" id="sRD-Rs-oUM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DPK-Wc-Pj5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="trd-3T-9pf" firstAttribute="top" secondItem="vtV-vu-j2B" secondAttribute="bottom" constant="150" id="4eA-To-fsY"/>
+                            <constraint firstItem="vtV-vu-j2B" firstAttribute="top" secondItem="DPK-Wc-Pj5" secondAttribute="top" constant="100" id="Bb6-1g-Wun"/>
+                            <constraint firstItem="vtV-vu-j2B" firstAttribute="centerX" secondItem="lZb-1e-nz5" secondAttribute="centerX" id="ec3-61-rWD"/>
+                            <constraint firstItem="trd-3T-9pf" firstAttribute="centerX" secondItem="lZb-1e-nz5" secondAttribute="centerX" id="y3l-0U-EAR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jxY-UQ-dPb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uwb-P5-jD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2633" y="477"/>
+        </scene>
+        <!--PageAVC-->
+        <scene sceneID="bm3-q6-ien">
+            <objects>
+                <viewController id="nSc-1b-96J" customClass="PageAVC" customModule="ChangingPagesHW4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OHs-vb-CVG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAGE A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxG-Kb-JBf">
+                                <rect key="frame" x="154.5" y="188" width="105" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucV-Xe-7Pg">
+                                <rect key="frame" x="138" y="374" width="138" height="33"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GO TO PAGE B">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pageBButton:" destination="nSc-1b-96J" eventType="touchUpInside" id="aVW-GE-4rs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h8n-5h-qCZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IxG-Kb-JBf" firstAttribute="centerX" secondItem="OHs-vb-CVG" secondAttribute="centerX" id="L3l-Z3-Z60"/>
+                            <constraint firstItem="IxG-Kb-JBf" firstAttribute="top" secondItem="h8n-5h-qCZ" secondAttribute="top" constant="100" id="ZzH-Bd-7oD"/>
+                            <constraint firstItem="ucV-Xe-7Pg" firstAttribute="top" secondItem="IxG-Kb-JBf" secondAttribute="bottom" constant="150" id="cbO-Cv-Oxl"/>
+                            <constraint firstItem="ucV-Xe-7Pg" firstAttribute="centerX" secondItem="OHs-vb-CVG" secondAttribute="centerX" id="fod-Zp-rV8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1v8-Dn-hrD"/>
+                    <connections>
+                        <segue destination="tHj-81-3cb" kind="show" identifier="toPageB" id="Mem-TG-cof"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xyp-QI-B94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="-271"/>
+        </scene>
+        <!--PageBVC-->
+        <scene sceneID="n2d-w4-59A">
+            <objects>
+                <viewController id="tHj-81-3cb" customClass="PageBVC" customModule="ChangingPagesHW4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iyk-F1-aLp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAGE B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwy-03-wex">
+                                <rect key="frame" x="155.5" y="188" width="103" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDd-lm-oCA">
+                                <rect key="frame" x="138" y="374" width="138" height="33"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GO TO PAGE Y">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pageYButton:" destination="tHj-81-3cb" eventType="touchUpInside" id="Gqo-IV-tG1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lRI-fJ-elI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yDd-lm-oCA" firstAttribute="centerX" secondItem="Iyk-F1-aLp" secondAttribute="centerX" id="4ia-rA-EO3"/>
+                            <constraint firstItem="Zwy-03-wex" firstAttribute="centerX" secondItem="Iyk-F1-aLp" secondAttribute="centerX" id="9sz-7F-biw"/>
+                            <constraint firstItem="Zwy-03-wex" firstAttribute="top" secondItem="lRI-fJ-elI" secondAttribute="top" constant="100" id="rVm-qD-1O9"/>
+                            <constraint firstItem="yDd-lm-oCA" firstAttribute="top" secondItem="Zwy-03-wex" secondAttribute="bottom" constant="150" id="yeE-QI-Bvz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uIM-4r-wdy"/>
+                    <connections>
+                        <segue destination="WcV-FZ-ACj" kind="show" identifier="toPageY" id="XOr-pw-3Kb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lpp-Rp-t1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2632" y="-271"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="33J-89-HS5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jHd-d4-J4Z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QKi-Qk-9F8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Weu-fn-Suk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ier-Up-cGS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XOr-pw-3Kb"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
