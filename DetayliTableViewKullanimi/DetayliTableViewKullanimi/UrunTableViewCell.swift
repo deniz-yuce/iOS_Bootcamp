@@ -7,8 +7,8 @@
 
 import UIKit
 
-protocol HucreProtocol {
-    func buttonTiklandi (indexPath: IndexPath)
+protocol HucreProtokol {
+    func buttonTiklandi(indexPath:IndexPath)
 }
 
 class UrunTableViewCell: UITableViewCell {
@@ -18,7 +18,7 @@ class UrunTableViewCell: UITableViewCell {
     @IBOutlet weak var urunFiyatLabel: UILabel!
     @IBOutlet weak var hucreArkaPlan: UIView!
     
-    var hucreProtocol:HucreProtocol?
+    var hucreProtocol:HucreProtokol?
     var indexPath:IndexPath?
 
     override func awakeFromNib() {

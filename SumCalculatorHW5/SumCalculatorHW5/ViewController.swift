@@ -76,10 +76,13 @@ class ViewController: UIViewController {
     @IBAction func equalSign(_ sender: Any) {
         let result = calculate(equation: equationString)
         resultLabel.text = String(result)
+        equationString = ""
+        print("\(equationString) ff")
     }
     
     @IBAction func clearButton(_ sender: Any) {
-        
+        equationString = ""
+        resultLabel.text = "0"
     }
     
     func calculate(equation:String) -> Int {

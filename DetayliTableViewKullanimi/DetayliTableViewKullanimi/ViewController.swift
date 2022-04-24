@@ -41,7 +41,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController : UITableViewDelegate, UITableViewDataSource, HucreProtocol
+extension ViewController : UITableViewDelegate, UITableViewDataSource, HucreProtokol
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return urunlerListe.count
@@ -81,6 +81,6 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource, HucreProt
     
     func buttonTiklandi(indexPath: IndexPath) {
         let urun = urunlerListe[indexPath.row]
-        print("\(urun.urun_ad!) aaaa tıklandı")
+        print("\(urun.urun_ad!) sepete eklendi")
     }
 }
