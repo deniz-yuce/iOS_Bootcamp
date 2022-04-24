@@ -16,20 +16,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHf-dg-BcJ">
-                                <rect key="frame" x="173.5" y="432.5" width="67" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="DETAY"/>
-                                <connections>
-                                    <action selector="buttonDetay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osj-MT-dbf"/>
-                                </connections>
-                            </button>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="x1h-EL-SeC">
+                                <rect key="frame" x="0.0" y="148" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ecZ-bN-CUg">
+                                <rect key="frame" x="0.0" y="199" width="414" height="663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kisilerHucre" id="g2F-C8-hcm" customClass="TableViewCell" customModule="KisilerUygulamasi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g2F-C8-hcm" id="oO9-AV-Fep">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om5-ai-rY5">
+                                                    <rect key="frame" x="177.5" y="35" width="59" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="om5-ai-rY5" firstAttribute="centerX" secondItem="oO9-AV-Fep" secondAttribute="centerX" id="7hu-d8-0xJ"/>
+                                                <constraint firstItem="om5-ai-rY5" firstAttribute="centerY" secondItem="oO9-AV-Fep" secondAttribute="centerY" id="YXS-0B-O2w"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="kisiBilgiLabel" destination="om5-ai-rY5" id="Uap-FA-w9z"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qHf-dg-BcJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tyi-Z5-5Ey"/>
-                            <constraint firstItem="qHf-dg-BcJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yOe-fq-68B"/>
+                            <constraint firstItem="x1h-EL-SeC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Da8-q3-UaW"/>
+                            <constraint firstItem="ecZ-bN-CUg" firstAttribute="top" secondItem="x1h-EL-SeC" secondAttribute="bottom" id="Nrw-8P-U5U"/>
+                            <constraint firstItem="x1h-EL-SeC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p4S-dh-PVY"/>
+                            <constraint firstItem="x1h-EL-SeC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="unz-b0-K47"/>
+                            <constraint firstItem="ecZ-bN-CUg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wNa-Kr-gdf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ecZ-bN-CUg" secondAttribute="trailing" id="yQr-P3-muT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ecZ-bN-CUg" secondAttribute="bottom" id="zpY-7i-6SN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kişiler" id="JKu-95-ida">
@@ -40,6 +70,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="kisilerTableView" destination="ecZ-bN-CUg" id="hIb-82-zxZ"/>
+                        <outlet property="searchBar" destination="x1h-EL-SeC" id="pNo-t2-uFA"/>
                         <segue destination="S5h-Aw-K1N" kind="show" identifier="toDetay" id="5JY-xd-B74"/>
                     </connections>
                 </viewController>
@@ -157,7 +189,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U0c-RN-FeP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="n4H-ZJ-t2b">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

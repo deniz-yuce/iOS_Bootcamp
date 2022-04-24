@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034DC47628140A9E00A47F86 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034DC47528140A9E00A47F86 /* TableViewCell.swift */; };
 		03BAECE2280C0D5600E686B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAECE1280C0D5600E686B4 /* AppDelegate.swift */; };
 		03BAECE4280C0D5600E686B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAECE3280C0D5600E686B4 /* SceneDelegate.swift */; };
 		03BAECE6280C0D5600E686B4 /* AnasayfaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BAECE5280C0D5600E686B4 /* AnasayfaVC.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		034DC47528140A9E00A47F86 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		03BAECDE280C0D5600E686B4 /* KisilerUygulamasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KisilerUygulamasi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BAECE1280C0D5600E686B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03BAECE3280C0D5600E686B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				03BAECE5280C0D5600E686B4 /* AnasayfaVC.swift */,
 				03BAECE7280C0D5600E686B4 /* Main.storyboard */,
 				03BAED89280C352000E686B4 /* KisiKayitVC.swift */,
+				034DC47528140A9E00A47F86 /* TableViewCell.swift */,
 				03BAED8B280C356700E686B4 /* KisiDetayVC.swift */,
 				03BAED8D280C43C200E686B4 /* Kisiler.swift */,
 				03BAECEA280C0D5700E686B4 /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 				03BAECE2280C0D5600E686B4 /* AppDelegate.swift in Sources */,
 				03BAECE4280C0D5600E686B4 /* SceneDelegate.swift in Sources */,
 				03BAED8A280C352000E686B4 /* KisiKayitVC.swift in Sources */,
+				034DC47628140A9E00A47F86 /* TableViewCell.swift in Sources */,
 				03BAED8E280C43C200E686B4 /* Kisiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
