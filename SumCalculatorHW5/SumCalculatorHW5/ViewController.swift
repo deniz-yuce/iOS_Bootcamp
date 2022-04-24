@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     @IBAction func oneNumber(_ sender: Any) {
         equationString.append("1")
         resultLabel.text = equationString
-        print(equationString)
     }
     
     @IBAction func twoNumber(_ sender: Any) {
@@ -75,14 +74,27 @@ class ViewController: UIViewController {
     }
     
     @IBAction func equalSign(_ sender: Any) {
+        let result = calculate(equation: equationString)
+        resultLabel.text = String(result)
     }
     
     @IBAction func clearButton(_ sender: Any) {
         
     }
     
-    func importEquation(number:Int) {
-        
+    func calculate(equation:String) -> Int {
+        let array = equation.split(separator: "+")
+        var sum = 0
+        print(array)
+        for n in array {
+            if let value = Int(n) {
+                sum += value
+             }else {
+                 print("Girilen veri hatalı")
+             }
+            print(sum)
+        }
+        return sum
     }
 }
 

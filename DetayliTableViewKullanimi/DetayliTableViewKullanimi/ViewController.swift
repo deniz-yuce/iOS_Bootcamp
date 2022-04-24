@@ -41,7 +41,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController : UITableViewDelegate, UITableViewDataSource
+extension ViewController : UITableViewDelegate, UITableViewDataSource, HucreProtocol
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return urunlerListe.count
@@ -59,6 +59,28 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource
         cell.backgroundColor = UIColor(white: 0.95, alpha: 1)
         cell.hucreArkaPlan.layer.cornerRadius = 10.0
         
+        cell.hucreProtocol = self
+        cell.indexPath = indexPath
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let urun = urunlerListe[indexPath.row]
+        
+        let silAction = UIContextualAction(style: .destructive, title: "Sil") { (action, view, void) in
+            print("\(urun.urun_ad!) silindi")
+        }
+
+        let duzenleAction = UIContextualAction(style: .normal, title: "Düzenle") { (action, view, void) in
+            print("\(urun.urun_ad!) düzenlendi")
+        }
+        
+        return UISwipeActionsConfiguration(actions: [silAction, duzenleAction])
+    }
+    
+    func buttonTiklandi(indexPath: IndexPath) {
+        let urun = urunlerListe[indexPath.row]
+        print("\(urun.urun_ad!) aaaa tıklandı")
     }
 }
