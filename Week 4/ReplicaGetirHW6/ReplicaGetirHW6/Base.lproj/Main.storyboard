@@ -1,24 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sna-sM-K1B">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReplicaGetirHW6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-6" translatesAutoresizingMaskIntoConstraints="NO" id="dUQ-dH-7iQ">
+                                <rect key="frame" x="-1" y="88" width="416" height="36.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ash-m9-uxM">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="36.5"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Yeni Ürünler">
+                                            <fontDescription key="titleFontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="16"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZO-53-goR">
+                                        <rect key="frame" x="137" y="0.0" width="142.5" height="36.5"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="İndirimler">
+                                            <fontDescription key="titleFontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="16"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hm-ZM-nwY">
+                                        <rect key="frame" x="273.5" y="0.0" width="142.5" height="36.5"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Meyve &amp; Sebze">
+                                            <fontDescription key="titleFontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="16"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="secondRenk"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dsn-Vb-Rwb">
+                                <rect key="frame" x="32" y="831" width="350.5" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKJ-On-WHV">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="31"/>
+                                        <color key="tintColor" name="anaRenk"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBv-RT-ikx">
+                                        <rect key="frame" x="80" y="0.0" width="45.5" height="31"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sq9-rC-KH9">
+                                        <rect key="frame" x="155.5" y="0.0" width="45" height="31"/>
+                                        <color key="tintColor" name="anaRenk"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="circle.fill" catalog="system" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6K9-lA-E5o">
+                                        <rect key="frame" x="230.5" y="0.0" width="44" height="31"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4y-uA-X8i">
+                                        <rect key="frame" x="304.5" y="0.0" width="46" height="31"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="gift.fill" catalog="system" title=""/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vhN-1Z-qiJ">
+                                <rect key="frame" x="0.0" y="162.5" width="414" height="668.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4EC-qU-GlH">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="urunHucre" id="2OL-qw-ww9" customClass="UrunCollectionViewCell" customModule="ReplicaGetirHW6" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="160.5" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ggA-KO-eYf">
+                                            <rect key="frame" x="0.0" y="0.0" width="160.5" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resim1" translatesAutoresizingMaskIntoConstraints="NO" id="SKA-I8-Zgv">
+                                                    <rect key="frame" x="30.5" y="5" width="100" height="75"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="9Fe-PE-euS"/>
+                                                        <constraint firstAttribute="height" constant="75" id="Gaj-gQ-PnN"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₺64,94" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuJ-Mt-uan">
+                                                    <rect key="frame" x="12" y="82" width="136.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" name="anaRenk"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyalüronik Asit Duş Jeli" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAa-VT-2Qi">
+                                                    <rect key="frame" x="12" y="101.5" width="136.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 ml" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nc-AO-0MI">
+                                                    <rect key="frame" x="12" y="121" width="136.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="KAa-VT-2Qi" secondAttribute="trailing" constant="12" id="9Vm-YG-nSC"/>
+                                                <constraint firstItem="2Nc-AO-0MI" firstAttribute="top" secondItem="KAa-VT-2Qi" secondAttribute="bottom" constant="5" id="Dop-xI-rDA"/>
+                                                <constraint firstAttribute="trailing" secondItem="YuJ-Mt-uan" secondAttribute="trailing" constant="12" id="HxE-qa-4vc"/>
+                                                <constraint firstAttribute="trailing" secondItem="2Nc-AO-0MI" secondAttribute="trailing" constant="12" id="KRq-CU-GCK"/>
+                                                <constraint firstItem="KAa-VT-2Qi" firstAttribute="leading" secondItem="ggA-KO-eYf" secondAttribute="leading" constant="12" id="L0j-Hc-X6a"/>
+                                                <constraint firstItem="KAa-VT-2Qi" firstAttribute="top" secondItem="YuJ-Mt-uan" secondAttribute="bottom" constant="5" id="dqR-V0-xvr"/>
+                                                <constraint firstItem="2Nc-AO-0MI" firstAttribute="leading" secondItem="ggA-KO-eYf" secondAttribute="leading" constant="12" id="iQM-CI-tkz"/>
+                                                <constraint firstItem="SKA-I8-Zgv" firstAttribute="top" secondItem="ggA-KO-eYf" secondAttribute="top" constant="5" id="mxu-tr-1bL"/>
+                                                <constraint firstItem="YuJ-Mt-uan" firstAttribute="top" secondItem="SKA-I8-Zgv" secondAttribute="bottom" constant="2" id="s03-Xk-n4n"/>
+                                                <constraint firstItem="SKA-I8-Zgv" firstAttribute="centerX" secondItem="ggA-KO-eYf" secondAttribute="centerX" id="s1x-jj-oQK"/>
+                                                <constraint firstItem="YuJ-Mt-uan" firstAttribute="leading" secondItem="ggA-KO-eYf" secondAttribute="leading" constant="12" id="uuI-bQ-az8"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="urunAdLabel" destination="KAa-VT-2Qi" id="yro-ah-Kfv"/>
+                                            <outlet property="urunFiyatLabel" destination="YuJ-Mt-uan" id="WwW-iU-kb0"/>
+                                            <outlet property="urunImageView" destination="SKA-I8-Zgv" id="Tw4-dg-042"/>
+                                            <outlet property="urunMiktarLabel" destination="2Nc-AO-0MI" id="tN5-0O-oyq"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvO-ui-uZP">
+                                <rect key="frame" x="13" y="129.5" width="88" height="28"/>
+                                <color key="backgroundColor" name="anaRenk"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yeni ürünler">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vhN-1Z-qiJ" firstAttribute="top" secondItem="EvO-ui-uZP" secondAttribute="bottom" constant="5" id="9Ju-aT-d0r"/>
+                            <constraint firstItem="dsn-Vb-Rwb" firstAttribute="top" secondItem="vhN-1Z-qiJ" secondAttribute="bottom" id="9ev-Wb-ca9"/>
+                            <constraint firstItem="EvO-ui-uZP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="Jxd-tm-mjq"/>
+                            <constraint firstItem="vhN-1Z-qiJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="U5O-ia-NQV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EvO-ui-uZP" secondAttribute="trailing" constant="313" id="XaD-tw-rF8"/>
+                            <constraint firstItem="dsn-Vb-Rwb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zfe-C4-IyN"/>
+                            <constraint firstItem="vhN-1Z-qiJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cGL-Km-bQ6"/>
+                            <constraint firstItem="EvO-ui-uZP" firstAttribute="top" secondItem="dUQ-dH-7iQ" secondAttribute="bottom" constant="5" id="fvq-TF-fLf"/>
+                            <constraint firstItem="dUQ-dH-7iQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kdV-gi-uWQ"/>
+                            <constraint firstItem="dUQ-dH-7iQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mM2-Jb-FJt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dsn-Vb-Rwb" secondAttribute="bottom" id="maq-ck-VZ5"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3li-Ce-8vz"/>
+                    <connections>
+                        <outlet property="urunlerCollectionView" destination="vhN-1Z-qiJ" id="Tm7-El-76m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2002.8985507246377" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cLE-2h-wId">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sna-sM-K1B" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="fmb-cF-3yd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eNC-TT-ICY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fiG-Ui-1YW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XdQ-Mj-Ewb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092.753623188406" y="69.642857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="gift.fill" catalog="system" width="128" height="124"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="resim1" width="500" height="500"/>
+        <namedColor name="anaRenk">
+            <color red="0.36470588235294116" green="0.24313725490196078" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondRenk">
+            <color red="0.47058823529411764" green="0.28627450980392155" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

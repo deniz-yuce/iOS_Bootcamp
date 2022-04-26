@@ -7,66 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0309FCF42815E61C008F23FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309FCF32815E61C008F23FA /* AppDelegate.swift */; };
-		0309FCF62815E61C008F23FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309FCF52815E61C008F23FA /* SceneDelegate.swift */; };
-		0309FCF82815E61C008F23FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309FCF72815E61C008F23FA /* ViewController.swift */; };
-		0309FCFB2815E61C008F23FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0309FCF92815E61C008F23FA /* Main.storyboard */; };
-		0309FCFD2815E61D008F23FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0309FCFC2815E61D008F23FA /* Assets.xcassets */; };
-		0309FD002815E61D008F23FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0309FCFE2815E61D008F23FA /* LaunchScreen.storyboard */; };
-		0309FD0B2815E61D008F23FA /* ReplicaGetirHW6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309FD0A2815E61D008F23FA /* ReplicaGetirHW6Tests.swift */; };
-		0309FD152815E61D008F23FA /* ReplicaGetirHW6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309FD142815E61D008F23FA /* ReplicaGetirHW6UITests.swift */; };
-		0309FD172815E61D008F23FA /* ReplicaGetirHW6UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309FD162815E61D008F23FA /* ReplicaGetirHW6UITestsLaunchTests.swift */; };
+		03834BE82816EAC00058E08E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03834BE72816EAC00058E08E /* AppDelegate.swift */; };
+		03834BEA2816EAC00058E08E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03834BE92816EAC00058E08E /* SceneDelegate.swift */; };
+		03834BEC2816EAC00058E08E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03834BEB2816EAC00058E08E /* ViewController.swift */; };
+		03834BEF2816EAC00058E08E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03834BED2816EAC00058E08E /* Main.storyboard */; };
+		03834BF12816EAC20058E08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03834BF02816EAC20058E08E /* Assets.xcassets */; };
+		03834BF42816EAC20058E08E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03834BF22816EAC20058E08E /* LaunchScreen.storyboard */; };
+		03834BFF2816EAC20058E08E /* ReplicaGetirHW6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03834BFE2816EAC20058E08E /* ReplicaGetirHW6Tests.swift */; };
+		03834C092816EAC20058E08E /* ReplicaGetirHW6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03834C082816EAC20058E08E /* ReplicaGetirHW6UITests.swift */; };
+		03834C0B2816EAC20058E08E /* ReplicaGetirHW6UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03834C0A2816EAC20058E08E /* ReplicaGetirHW6UITestsLaunchTests.swift */; };
+		03834C192816EC020058E08E /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03834C182816EC020058E08E /* Comfortaa-Bold.ttf */; };
+		03834C1B2817E5450058E08E /* Urunler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03834C1A2817E5450058E08E /* Urunler.swift */; };
+		03834C1F2817FF370058E08E /* UrunCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03834C1E2817FF370058E08E /* UrunCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0309FD072815E61D008F23FA /* PBXContainerItemProxy */ = {
+		03834BFB2816EAC20058E08E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0309FCE82815E61C008F23FA /* Project object */;
+			containerPortal = 03834BDC2816EAC00058E08E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0309FCEF2815E61C008F23FA;
+			remoteGlobalIDString = 03834BE32816EAC00058E08E;
 			remoteInfo = ReplicaGetirHW6;
 		};
-		0309FD112815E61D008F23FA /* PBXContainerItemProxy */ = {
+		03834C052816EAC20058E08E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0309FCE82815E61C008F23FA /* Project object */;
+			containerPortal = 03834BDC2816EAC00058E08E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0309FCEF2815E61C008F23FA;
+			remoteGlobalIDString = 03834BE32816EAC00058E08E;
 			remoteInfo = ReplicaGetirHW6;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0309FCF02815E61C008F23FA /* ReplicaGetirHW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplicaGetirHW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0309FCF32815E61C008F23FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0309FCF52815E61C008F23FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0309FCF72815E61C008F23FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0309FCFA2815E61C008F23FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0309FCFC2815E61D008F23FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0309FCFF2815E61D008F23FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0309FD012815E61D008F23FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0309FD062815E61D008F23FA /* ReplicaGetirHW6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReplicaGetirHW6Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0309FD0A2815E61D008F23FA /* ReplicaGetirHW6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicaGetirHW6Tests.swift; sourceTree = "<group>"; };
-		0309FD102815E61D008F23FA /* ReplicaGetirHW6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReplicaGetirHW6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0309FD142815E61D008F23FA /* ReplicaGetirHW6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicaGetirHW6UITests.swift; sourceTree = "<group>"; };
-		0309FD162815E61D008F23FA /* ReplicaGetirHW6UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicaGetirHW6UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		03834BE42816EAC00058E08E /* ReplicaGetirHW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplicaGetirHW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03834BE72816EAC00058E08E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03834BE92816EAC00058E08E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03834BEB2816EAC00058E08E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03834BEE2816EAC00058E08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03834BF02816EAC20058E08E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03834BF32816EAC20058E08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03834BF52816EAC20058E08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03834BFA2816EAC20058E08E /* ReplicaGetirHW6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReplicaGetirHW6Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03834BFE2816EAC20058E08E /* ReplicaGetirHW6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicaGetirHW6Tests.swift; sourceTree = "<group>"; };
+		03834C042816EAC20058E08E /* ReplicaGetirHW6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReplicaGetirHW6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03834C082816EAC20058E08E /* ReplicaGetirHW6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicaGetirHW6UITests.swift; sourceTree = "<group>"; };
+		03834C0A2816EAC20058E08E /* ReplicaGetirHW6UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicaGetirHW6UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		03834C182816EC020058E08E /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		03834C1A2817E5450058E08E /* Urunler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urunler.swift; sourceTree = "<group>"; };
+		03834C1E2817FF370058E08E /* UrunCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0309FCED2815E61C008F23FA /* Frameworks */ = {
+		03834BE12816EAC00058E08E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0309FD032815E61D008F23FA /* Frameworks */ = {
+		03834BF72816EAC20058E08E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0309FD0D2815E61D008F23FA /* Frameworks */ = {
+		03834C012816EAC20058E08E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,67 +82,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0309FCE72815E61C008F23FA = {
+		03834BDB2816EAC00058E08E = {
 			isa = PBXGroup;
 			children = (
-				0309FCF22815E61C008F23FA /* ReplicaGetirHW6 */,
-				0309FD092815E61D008F23FA /* ReplicaGetirHW6Tests */,
-				0309FD132815E61D008F23FA /* ReplicaGetirHW6UITests */,
-				0309FCF12815E61C008F23FA /* Products */,
+				03834BE62816EAC00058E08E /* ReplicaGetirHW6 */,
+				03834BFD2816EAC20058E08E /* ReplicaGetirHW6Tests */,
+				03834C072816EAC20058E08E /* ReplicaGetirHW6UITests */,
+				03834BE52816EAC00058E08E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0309FCF12815E61C008F23FA /* Products */ = {
+		03834BE52816EAC00058E08E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0309FCF02815E61C008F23FA /* ReplicaGetirHW6.app */,
-				0309FD062815E61D008F23FA /* ReplicaGetirHW6Tests.xctest */,
-				0309FD102815E61D008F23FA /* ReplicaGetirHW6UITests.xctest */,
+				03834BE42816EAC00058E08E /* ReplicaGetirHW6.app */,
+				03834BFA2816EAC20058E08E /* ReplicaGetirHW6Tests.xctest */,
+				03834C042816EAC20058E08E /* ReplicaGetirHW6UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0309FCF22815E61C008F23FA /* ReplicaGetirHW6 */ = {
+		03834BE62816EAC00058E08E /* ReplicaGetirHW6 */ = {
 			isa = PBXGroup;
 			children = (
-				0309FCF32815E61C008F23FA /* AppDelegate.swift */,
-				0309FCF52815E61C008F23FA /* SceneDelegate.swift */,
-				0309FCF72815E61C008F23FA /* ViewController.swift */,
-				0309FCF92815E61C008F23FA /* Main.storyboard */,
-				0309FCFC2815E61D008F23FA /* Assets.xcassets */,
-				0309FCFE2815E61D008F23FA /* LaunchScreen.storyboard */,
-				0309FD012815E61D008F23FA /* Info.plist */,
+				03834BE72816EAC00058E08E /* AppDelegate.swift */,
+				03834C1E2817FF370058E08E /* UrunCollectionViewCell.swift */,
+				03834BE92816EAC00058E08E /* SceneDelegate.swift */,
+				03834BEB2816EAC00058E08E /* ViewController.swift */,
+				03834C172816EBEE0058E08E /* Fonts */,
+				03834BED2816EAC00058E08E /* Main.storyboard */,
+				03834C1A2817E5450058E08E /* Urunler.swift */,
+				03834BF02816EAC20058E08E /* Assets.xcassets */,
+				03834BF22816EAC20058E08E /* LaunchScreen.storyboard */,
+				03834BF52816EAC20058E08E /* Info.plist */,
 			);
 			path = ReplicaGetirHW6;
 			sourceTree = "<group>";
 		};
-		0309FD092815E61D008F23FA /* ReplicaGetirHW6Tests */ = {
+		03834BFD2816EAC20058E08E /* ReplicaGetirHW6Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0309FD0A2815E61D008F23FA /* ReplicaGetirHW6Tests.swift */,
+				03834BFE2816EAC20058E08E /* ReplicaGetirHW6Tests.swift */,
 			);
 			path = ReplicaGetirHW6Tests;
 			sourceTree = "<group>";
 		};
-		0309FD132815E61D008F23FA /* ReplicaGetirHW6UITests */ = {
+		03834C072816EAC20058E08E /* ReplicaGetirHW6UITests */ = {
 			isa = PBXGroup;
 			children = (
-				0309FD142815E61D008F23FA /* ReplicaGetirHW6UITests.swift */,
-				0309FD162815E61D008F23FA /* ReplicaGetirHW6UITestsLaunchTests.swift */,
+				03834C082816EAC20058E08E /* ReplicaGetirHW6UITests.swift */,
+				03834C0A2816EAC20058E08E /* ReplicaGetirHW6UITestsLaunchTests.swift */,
 			);
 			path = ReplicaGetirHW6UITests;
+			sourceTree = "<group>";
+		};
+		03834C172816EBEE0058E08E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				03834C182816EC020058E08E /* Comfortaa-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0309FCEF2815E61C008F23FA /* ReplicaGetirHW6 */ = {
+		03834BE32816EAC00058E08E /* ReplicaGetirHW6 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0309FD1A2815E61D008F23FA /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6" */;
+			buildConfigurationList = 03834C0E2816EAC20058E08E /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6" */;
 			buildPhases = (
-				0309FCEC2815E61C008F23FA /* Sources */,
-				0309FCED2815E61C008F23FA /* Frameworks */,
-				0309FCEE2815E61C008F23FA /* Resources */,
+				03834BE02816EAC00058E08E /* Sources */,
+				03834BE12816EAC00058E08E /* Frameworks */,
+				03834BE22816EAC00058E08E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -144,69 +161,69 @@
 			);
 			name = ReplicaGetirHW6;
 			productName = ReplicaGetirHW6;
-			productReference = 0309FCF02815E61C008F23FA /* ReplicaGetirHW6.app */;
+			productReference = 03834BE42816EAC00058E08E /* ReplicaGetirHW6.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0309FD052815E61D008F23FA /* ReplicaGetirHW6Tests */ = {
+		03834BF92816EAC20058E08E /* ReplicaGetirHW6Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0309FD1D2815E61D008F23FA /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6Tests" */;
+			buildConfigurationList = 03834C112816EAC20058E08E /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6Tests" */;
 			buildPhases = (
-				0309FD022815E61D008F23FA /* Sources */,
-				0309FD032815E61D008F23FA /* Frameworks */,
-				0309FD042815E61D008F23FA /* Resources */,
+				03834BF62816EAC20058E08E /* Sources */,
+				03834BF72816EAC20058E08E /* Frameworks */,
+				03834BF82816EAC20058E08E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0309FD082815E61D008F23FA /* PBXTargetDependency */,
+				03834BFC2816EAC20058E08E /* PBXTargetDependency */,
 			);
 			name = ReplicaGetirHW6Tests;
 			productName = ReplicaGetirHW6Tests;
-			productReference = 0309FD062815E61D008F23FA /* ReplicaGetirHW6Tests.xctest */;
+			productReference = 03834BFA2816EAC20058E08E /* ReplicaGetirHW6Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0309FD0F2815E61D008F23FA /* ReplicaGetirHW6UITests */ = {
+		03834C032816EAC20058E08E /* ReplicaGetirHW6UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0309FD202815E61D008F23FA /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6UITests" */;
+			buildConfigurationList = 03834C142816EAC20058E08E /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6UITests" */;
 			buildPhases = (
-				0309FD0C2815E61D008F23FA /* Sources */,
-				0309FD0D2815E61D008F23FA /* Frameworks */,
-				0309FD0E2815E61D008F23FA /* Resources */,
+				03834C002816EAC20058E08E /* Sources */,
+				03834C012816EAC20058E08E /* Frameworks */,
+				03834C022816EAC20058E08E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0309FD122815E61D008F23FA /* PBXTargetDependency */,
+				03834C062816EAC20058E08E /* PBXTargetDependency */,
 			);
 			name = ReplicaGetirHW6UITests;
 			productName = ReplicaGetirHW6UITests;
-			productReference = 0309FD102815E61D008F23FA /* ReplicaGetirHW6UITests.xctest */;
+			productReference = 03834C042816EAC20058E08E /* ReplicaGetirHW6UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0309FCE82815E61C008F23FA /* Project object */ = {
+		03834BDC2816EAC00058E08E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					0309FCEF2815E61C008F23FA = {
+					03834BE32816EAC00058E08E = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
-					0309FD052815E61D008F23FA = {
+					03834BF92816EAC20058E08E = {
 						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = 0309FCEF2815E61C008F23FA;
+						TestTargetID = 03834BE32816EAC00058E08E;
 					};
-					0309FD0F2815E61D008F23FA = {
+					03834C032816EAC20058E08E = {
 						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = 0309FCEF2815E61C008F23FA;
+						TestTargetID = 03834BE32816EAC00058E08E;
 					};
 				};
 			};
-			buildConfigurationList = 0309FCEB2815E61C008F23FA /* Build configuration list for PBXProject "ReplicaGetirHW6" */;
+			buildConfigurationList = 03834BDF2816EAC00058E08E /* Build configuration list for PBXProject "ReplicaGetirHW6" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,37 +231,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 0309FCE72815E61C008F23FA;
-			productRefGroup = 0309FCF12815E61C008F23FA /* Products */;
+			mainGroup = 03834BDB2816EAC00058E08E;
+			productRefGroup = 03834BE52816EAC00058E08E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0309FCEF2815E61C008F23FA /* ReplicaGetirHW6 */,
-				0309FD052815E61D008F23FA /* ReplicaGetirHW6Tests */,
-				0309FD0F2815E61D008F23FA /* ReplicaGetirHW6UITests */,
+				03834BE32816EAC00058E08E /* ReplicaGetirHW6 */,
+				03834BF92816EAC20058E08E /* ReplicaGetirHW6Tests */,
+				03834C032816EAC20058E08E /* ReplicaGetirHW6UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0309FCEE2815E61C008F23FA /* Resources */ = {
+		03834BE22816EAC00058E08E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0309FD002815E61D008F23FA /* LaunchScreen.storyboard in Resources */,
-				0309FCFD2815E61D008F23FA /* Assets.xcassets in Resources */,
-				0309FCFB2815E61C008F23FA /* Main.storyboard in Resources */,
+				03834C192816EC020058E08E /* Comfortaa-Bold.ttf in Resources */,
+				03834BF42816EAC20058E08E /* LaunchScreen.storyboard in Resources */,
+				03834BF12816EAC20058E08E /* Assets.xcassets in Resources */,
+				03834BEF2816EAC00058E08E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0309FD042815E61D008F23FA /* Resources */ = {
+		03834BF82816EAC20058E08E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0309FD0E2815E61D008F23FA /* Resources */ = {
+		03834C022816EAC20058E08E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,61 +272,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0309FCEC2815E61C008F23FA /* Sources */ = {
+		03834BE02816EAC00058E08E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0309FCF82815E61C008F23FA /* ViewController.swift in Sources */,
-				0309FCF42815E61C008F23FA /* AppDelegate.swift in Sources */,
-				0309FCF62815E61C008F23FA /* SceneDelegate.swift in Sources */,
+				03834C1F2817FF370058E08E /* UrunCollectionViewCell.swift in Sources */,
+				03834BEC2816EAC00058E08E /* ViewController.swift in Sources */,
+				03834C1B2817E5450058E08E /* Urunler.swift in Sources */,
+				03834BE82816EAC00058E08E /* AppDelegate.swift in Sources */,
+				03834BEA2816EAC00058E08E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0309FD022815E61D008F23FA /* Sources */ = {
+		03834BF62816EAC20058E08E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0309FD0B2815E61D008F23FA /* ReplicaGetirHW6Tests.swift in Sources */,
+				03834BFF2816EAC20058E08E /* ReplicaGetirHW6Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0309FD0C2815E61D008F23FA /* Sources */ = {
+		03834C002816EAC20058E08E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0309FD152815E61D008F23FA /* ReplicaGetirHW6UITests.swift in Sources */,
-				0309FD172815E61D008F23FA /* ReplicaGetirHW6UITestsLaunchTests.swift in Sources */,
+				03834C092816EAC20058E08E /* ReplicaGetirHW6UITests.swift in Sources */,
+				03834C0B2816EAC20058E08E /* ReplicaGetirHW6UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0309FD082815E61D008F23FA /* PBXTargetDependency */ = {
+		03834BFC2816EAC20058E08E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0309FCEF2815E61C008F23FA /* ReplicaGetirHW6 */;
-			targetProxy = 0309FD072815E61D008F23FA /* PBXContainerItemProxy */;
+			target = 03834BE32816EAC00058E08E /* ReplicaGetirHW6 */;
+			targetProxy = 03834BFB2816EAC20058E08E /* PBXContainerItemProxy */;
 		};
-		0309FD122815E61D008F23FA /* PBXTargetDependency */ = {
+		03834C062816EAC20058E08E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0309FCEF2815E61C008F23FA /* ReplicaGetirHW6 */;
-			targetProxy = 0309FD112815E61D008F23FA /* PBXContainerItemProxy */;
+			target = 03834BE32816EAC00058E08E /* ReplicaGetirHW6 */;
+			targetProxy = 03834C052816EAC20058E08E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0309FCF92815E61C008F23FA /* Main.storyboard */ = {
+		03834BED2816EAC00058E08E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0309FCFA2815E61C008F23FA /* Base */,
+				03834BEE2816EAC00058E08E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0309FCFE2815E61D008F23FA /* LaunchScreen.storyboard */ = {
+		03834BF22816EAC20058E08E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0309FCFF2815E61D008F23FA /* Base */,
+				03834BF32816EAC20058E08E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +336,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0309FD182815E61D008F23FA /* Debug */ = {
+		03834C0C2816EAC20058E08E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +396,7 @@
 			};
 			name = Debug;
 		};
-		0309FD192815E61D008F23FA /* Release */ = {
+		03834C0D2816EAC20058E08E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -430,7 +450,7 @@
 			};
 			name = Release;
 		};
-		0309FD1B2815E61D008F23FA /* Debug */ = {
+		03834C0F2816EAC20058E08E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -457,7 +477,7 @@
 			};
 			name = Debug;
 		};
-		0309FD1C2815E61D008F23FA /* Release */ = {
+		03834C102816EAC20058E08E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -484,7 +504,7 @@
 			};
 			name = Release;
 		};
-		0309FD1E2815E61D008F23FA /* Debug */ = {
+		03834C122816EAC20058E08E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -503,7 +523,7 @@
 			};
 			name = Debug;
 		};
-		0309FD1F2815E61D008F23FA /* Release */ = {
+		03834C132816EAC20058E08E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -522,7 +542,7 @@
 			};
 			name = Release;
 		};
-		0309FD212815E61D008F23FA /* Debug */ = {
+		03834C152816EAC20058E08E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -539,7 +559,7 @@
 			};
 			name = Debug;
 		};
-		0309FD222815E61D008F23FA /* Release */ = {
+		03834C162816EAC20058E08E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -559,43 +579,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0309FCEB2815E61C008F23FA /* Build configuration list for PBXProject "ReplicaGetirHW6" */ = {
+		03834BDF2816EAC00058E08E /* Build configuration list for PBXProject "ReplicaGetirHW6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0309FD182815E61D008F23FA /* Debug */,
-				0309FD192815E61D008F23FA /* Release */,
+				03834C0C2816EAC20058E08E /* Debug */,
+				03834C0D2816EAC20058E08E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0309FD1A2815E61D008F23FA /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6" */ = {
+		03834C0E2816EAC20058E08E /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0309FD1B2815E61D008F23FA /* Debug */,
-				0309FD1C2815E61D008F23FA /* Release */,
+				03834C0F2816EAC20058E08E /* Debug */,
+				03834C102816EAC20058E08E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0309FD1D2815E61D008F23FA /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6Tests" */ = {
+		03834C112816EAC20058E08E /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0309FD1E2815E61D008F23FA /* Debug */,
-				0309FD1F2815E61D008F23FA /* Release */,
+				03834C122816EAC20058E08E /* Debug */,
+				03834C132816EAC20058E08E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0309FD202815E61D008F23FA /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6UITests" */ = {
+		03834C142816EAC20058E08E /* Build configuration list for PBXNativeTarget "ReplicaGetirHW6UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0309FD212815E61D008F23FA /* Debug */,
-				0309FD222815E61D008F23FA /* Release */,
+				03834C152816EAC20058E08E /* Debug */,
+				03834C162816EAC20058E08E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0309FCE82815E61C008F23FA /* Project object */;
+	rootObject = 03834BDC2816EAC00058E08E /* Project object */;
 }

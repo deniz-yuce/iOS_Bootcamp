@@ -2,7 +2,7 @@
 //  ReplicaGetirHW6Tests.swift
 //  ReplicaGetirHW6Tests
 //
-//  Created by Deniz Yüce on 24.04.2022.
+//  Created by Deniz Yüce on 25.04.2022.
 //
 
 import XCTest

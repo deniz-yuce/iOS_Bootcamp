@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  ReplicaGetirHW6
 //
-//  Created by Deniz Yüce on 24.04.2022.
+//  Created by Deniz Yüce on 25.04.2022.
 //
 
 import UIKit
