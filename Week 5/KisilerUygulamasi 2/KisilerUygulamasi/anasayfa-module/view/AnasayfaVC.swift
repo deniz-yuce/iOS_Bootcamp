@@ -43,6 +43,10 @@ class AnasayfaVC: UIViewController {
         anasayfaPresenterNesnesi?.kisileriYukle()
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        anasayfaPresenterNesnesi?.kisileriYukle()
+    }
 
     //@IBAction func buttonDetay(_ sender: Any) {
       //  let kisi = Kisiler(kisi_id: 1, kisi_ad: "Zeynep", kisi_tel: "123123")
