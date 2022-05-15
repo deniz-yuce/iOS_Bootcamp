@@ -42,9 +42,39 @@ class AnasayfaInteractor :PresenterToInteractorAnasayfaProtocol {
     
     func kisiAra(aramaKelimesi: String) {
         print("Arama sonucu : \(aramaKelimesi)")
+        db?.open()
+        var liste = [Kisiler]()
+        
+        do {
+            let rs = try db!.executeQuery("SELECT * FROM kisiler WHERE kisi_ad like '%\(aramaKelimesi)%'", values: nil) //result = rs
+            
+            while rs.next() { //bir sonraki satırda kayıt olduğu sürece...
+                let kisi = Kisiler(kisi_id: Int(rs.string(forColumn: "kiis_id"))!, kisi_ad: rs.string(forColumn: "kisi_ad")!, kisi_tel: rs.string(forColumn: "kisi_tel")!)
+                liste.append(kisi)
+            }
+            
+            anasayfaPresenter?.presenteraVeriGonder(kisilerListesi: liste)
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        
+        
+        db?.close()
     }
     
     func kisiSil(kisi_id: Int) {
         print("\(kisi_id) silindi")
+        db?.open()
+        do {
+            try db!.executeUpdate("DELETE FROM kisiler WHERE kiis_id = ?", values: [kisi_id])
+            //arayüzü günceller -tekrar yükle
+            tumKisileriAl()
+        } catch {
+            print(error.localizedDescription)
+        }
+        db?.close()
     }
+    
+    
 }
