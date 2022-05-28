@@ -47,11 +47,6 @@ class AnasayfaVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         anasayfaPresenterNesnesi?.kisileriYukle()
     }
-
-    //@IBAction func buttonDetay(_ sender: Any) {
-      //  let kisi = Kisiler(kisi_id: 1, kisi_ad: "Zeynep", kisi_tel: "123123")
-        //performSegue(withIdentifier: "toDetay", sender: kisi)
-    //}
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetay" {
