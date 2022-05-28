@@ -37,10 +37,6 @@ class AnasayfaVC: UIViewController {
         
     }
 
-    //@IBAction func buttonDetay(_ sender: Any) {
-      //  let kisi = Kisiler(kisi_id: 1, kisi_ad: "Zeynep", kisi_tel: "123123")
-        //performSegue(withIdentifier: "toDetay", sender: kisi)
-    //}
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetay" {
@@ -51,9 +47,6 @@ class AnasayfaVC: UIViewController {
         }
     }
     
-    //func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-      //  print("Arama sonucu : \(searchText)")
-    //}
     
 }
 

@@ -180,10 +180,9 @@ let f = Fonksiyonlar()
      }
  }
 
-//Bsinifi() : Virtual object  //there is paranthesis
-
- print(BSinifi().x)
+ print(BSinifi().x)     //Bsinifi() : Virtual object  //there is paranthesis
  BSinifi().method()
+
 
 
 // // Enumeration
@@ -358,7 +357,7 @@ protocol MyProtocol {               //burada oluşturacaklarımız TASLAK olmal�
     func metod2() -> String
 }
 
-// ype 'ClassA' does not conform to protocol 'MyProtocol' hatası önemli
+// Type 'ClassA' does not conform to protocol 'MyProtocol' hatası önemli
 class ClassA : MyProtocol {
     var degisken: Int = 10
     

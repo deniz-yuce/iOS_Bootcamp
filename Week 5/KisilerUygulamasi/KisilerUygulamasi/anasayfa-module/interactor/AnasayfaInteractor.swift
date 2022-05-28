@@ -20,7 +20,7 @@ class AnasayfaInteractor :PresenterToInteractorAnasayfaProtocol {
         liste.append(k2)
         liste.append(k3)
         liste.append(k4)
-        anasayfaPresenter?.presenteraVeriGonder(kisilerListesi: liste)
+        anasayfaPresenter?.presenteraVeriGonder(kisilerListesi: liste) //
     }
     
     func kisiAra(aramaKelimesi: String) {
