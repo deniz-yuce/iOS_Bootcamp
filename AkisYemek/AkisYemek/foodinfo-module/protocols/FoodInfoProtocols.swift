@@ -10,11 +10,11 @@ import Foundation
 protocol ViewToPresenterFoodInfoProtocol {
     var foodInfoInteractor:PresenterToInteractorFoodInfoProtocol? {get set}
     
-    func add(yemek_adi:String,yemek_fiyat:Int,yemek_siparis_adet:Int)
+    func add(yemek_adi:String,yemek_fiyat:String,yemek_siparis_adet:String,yemek_resim_adi:String)
 }
 
 protocol PresenterToInteractorFoodInfoProtocol {
-    func addFood(yemek_adi:String,yemek_fiyat:Int,yemek_siparis_adet:Int)
+    func addFood(yemek_adi:String,yemek_fiyat:String,yemek_siparis_adet:String,yemek_resim_adi:String)
 }
 
 protocol PresenterToRouterFoodInfoProtocol {

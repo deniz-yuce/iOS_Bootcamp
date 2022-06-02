@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomePageVC: UIViewController {
 
@@ -41,7 +42,9 @@ class HomePageVC: UIViewController {
 extension HomePageVC : PresenterToViewHomePageProtocol {
     func sendDataToView(foodsList: Array<Foods>) {
         self.foodsList = foodsList
-        self.foodTableView.reloadData()
+        DispatchQueue.main.async {
+            self.foodTableView.reloadData()
+        }
     }
 }
 
@@ -55,9 +58,11 @@ extension HomePageVC : UITableViewDelegate,UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath) as! FoodTableViewCell
         
-        cell.foodImageView.image = UIImage(named: food.yemek_resim_adi!)
+        //cell.foodImageView.image = UIImage(named: food.yemek_resim_adi!)
         cell.foodNameLabel.text = food.yemek_adi
         cell.foodPriceLabel.text = "\(food.yemek_fiyat!)₺"
+        let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(food.yemek_resim_adi!)")
+        cell.foodImageView.kf.setImage(with: url)
         
         return cell
     }

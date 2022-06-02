@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FoodInfoVC: UIViewController {
 
@@ -16,6 +17,8 @@ class FoodInfoVC: UIViewController {
     @IBOutlet weak var stepper: UIStepper!
     
     var foodInfoPresenterObject:ViewToPresenterFoodInfoProtocol?
+    
+    var yemek_siparis_adet:String?
     
     var food:Foods?
     
@@ -28,6 +31,8 @@ class FoodInfoVC: UIViewController {
             foodInfoImage.image = UIImage(named: f.yemek_resim_adi!)
             foodInfoNameLabel.text = f.yemek_adi
             foodInfoPriceLabel.text = "\(f.yemek_fiyat!)₺"
+            let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(f.yemek_resim_adi!)")
+            foodInfoImage.kf.setImage(with: url)
         }
     }
     
@@ -35,12 +40,14 @@ class FoodInfoVC: UIViewController {
     @IBAction func amountChange(_ sender: UIStepper) {
         foodInfoAmountLabel.text = String(Int(sender.value))
         print("Amount : \(Int(stepper.value))")
+        yemek_siparis_adet = String(Int(stepper.value))
+        //print(yemek_siparis_adet!)
     }
     
     @IBAction func addToCart(_ sender: Any) {
-        if let foodName = food?.yemek_adi, let foodPrice = food?.yemek_fiyat
+        if let foodName = food?.yemek_adi, let foodPrice = food?.yemek_fiyat, let foodImage = food?.yemek_resim_adi
             , let foodAmount = Int(foodInfoAmountLabel.text!) {
-            foodInfoPresenterObject?.add(yemek_adi: foodName, yemek_fiyat: foodPrice, yemek_siparis_adet: foodAmount)
+            foodInfoPresenterObject?.add(yemek_adi: foodName, yemek_fiyat: foodPrice, yemek_siparis_adet: String(foodAmount), yemek_resim_adi:String(foodImage))
         }
     }
     

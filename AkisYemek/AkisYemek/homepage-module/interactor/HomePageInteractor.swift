@@ -11,9 +11,10 @@ class HomePageInteractor : PresenterToInteractorHomePageProtocol {
     var homePagePresenter: InteractorToPresenterHomePageProtocol?
     
     func getAllFoods() {
+        
         let url = URL(string: "http://kasimadalan.pe.hu/yemekler/tumYemekleriGetir.php")!
         
-        URLSession.shared.dataTask(with: url){data,response,error in
+        URLSession.shared.dataTask(with: url){ data,response,error in
             if error != nil || data == nil {
                 print("Error")
                 return
@@ -21,12 +22,17 @@ class HomePageInteractor : PresenterToInteractorHomePageProtocol {
             
             do{
                 let answer = try JSONDecoder().decode(FoodsResponse.self, from: data!)
-                if let list = answer.yemekler {
-                    self.homePagePresenter?.sendDataToPresenter(foodsList: list)
+                if let success = answer.success {
+                    print("HomePage success : \(success)")
                 }
-            }catch {
-                print(error.localizedDescription)
+                
+                if let foods = answer.yemekler {
+                    self.homePagePresenter?.sendDataToPresenter(foodsList: foods)
+                }
+            } catch{
+                print("err: \(error)")
             }
+            
         }.resume()
     }
 }
