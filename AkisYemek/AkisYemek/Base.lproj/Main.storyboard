@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -80,7 +81,6 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JRm-5d-QGC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Ee-DQ-KdO"/>
                             <constraint firstItem="JRm-5d-QGC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="537-fX-wJL"/>
@@ -90,6 +90,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Akış Menu" id="eB9-2B-5fd">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="cart.fill" catalog="system" id="Rm8-lS-Vuv">
+                            <color key="tintColor" name="mainColor"/>
                             <connections>
                                 <segue destination="lBw-SE-wx8" kind="show" id="f05-Bo-p06"/>
                             </connections>
@@ -132,16 +133,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="9nB-qN-BeT">
-                                <rect key="frame" x="105" y="483.5" width="204.5" height="32"/>
+                                <rect key="frame" x="106.5" y="483.5" width="201.5" height="32"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXh-i2-OkZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="10.5" height="32"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXh-i2-OkZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="7.5" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="daI-a2-pos">
-                                        <rect key="frame" x="110.5" y="0.0" width="94" height="32"/>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="daI-a2-pos">
+                                        <rect key="frame" x="107.5" y="0.0" width="94" height="32"/>
                                         <connections>
                                             <action selector="amountChange:" destination="oIJ-Sg-V7h" eventType="valueChanged" id="xCi-54-ykD"/>
                                         </connections>
@@ -150,10 +151,15 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kK-25-t2a">
                                 <rect key="frame" x="145" y="595.5" width="124" height="38"/>
+                                <color key="backgroundColor" name="secondaryColor"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Add to cart">
+                                <buttonConfiguration key="configuration" style="plain" title="Add to cart">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="addToCart:" destination="oIJ-Sg-V7h" eventType="touchUpInside" id="AHO-rU-7Fw"/>
                                 </connections>
@@ -292,6 +298,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zo1-G0-14Q">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="mainColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -307,6 +314,12 @@
         <image name="bilgisayar" width="256" height="256"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="telefon" width="256" height="256"/>
+        <namedColor name="mainColor">
+            <color red="0.94499999284744263" green="0.3449999988079071" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryColor">
+            <color red="0.94499999284744263" green="0.81599998474121094" blue="0.65499997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

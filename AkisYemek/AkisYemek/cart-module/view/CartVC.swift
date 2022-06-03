@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CartVC: UIViewController {
 
@@ -34,7 +35,9 @@ class CartVC: UIViewController {
 extension CartVC : PresenterToViewCartProtocol {
     func sendDataToView(foodsInCart: Array<CartFoods>) {
         self.foodsInCartList = foodsInCart
-        self.cartTableView.reloadData()
+        DispatchQueue.main.async {
+            self.cartTableView.reloadData()
+        }
     }
 }
 
@@ -48,7 +51,9 @@ extension CartVC :UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cartCell", for: indexPath) as! CartTableViewCell
         
-        cell.cartImageView.image = UIImage(named: foodInCart.yemek_resim_adi!)
+        //cell.cartImageView.image = UIImage(named: foodInCart.yemek_resim_adi!)
+        let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(foodInCart.yemek_resim_adi!)")
+        cell.cartImageView.kf.setImage(with: url)
         cell.cartNameLabel.text = foodInCart.yemek_adi
         cell.cartAmountLabel.text = "\(foodInCart.yemek_siparis_adet!) x"
         cell.cartPriceLabel.text = "\(Int(foodInCart.yemek_fiyat!)!*Int(foodInCart.yemek_siparis_adet!)!)₺"
