@@ -19,6 +19,15 @@ class HomePageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let apperearence = UINavigationBarAppearance()
+        apperearence.backgroundColor = UIColor(named: "secondaryColor")
+        apperearence.titleTextAttributes = [.foregroundColor: UIColor(named: "fontColor")!]
+        
+        //navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.standardAppearance = apperearence
+        navigationController?.navigationBar.compactAppearance = apperearence
+        navigationController?.navigationBar.scrollEdgeAppearance = apperearence
+        
         foodTableView.delegate = self
         foodTableView.dataSource = self
         
@@ -63,6 +72,8 @@ extension HomePageVC : UITableViewDelegate,UITableViewDataSource {
         cell.foodPriceLabel.text = "\(food.yemek_fiyat!)₺"
         let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(food.yemek_resim_adi!)")
         cell.foodImageView.kf.setImage(with: url)
+        
+        //cell.backgroundColor = UIColor.red
         
         return cell
     }
