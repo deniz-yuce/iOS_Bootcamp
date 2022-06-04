@@ -21,7 +21,7 @@ class HomePageVC: UIViewController {
         
         let apperearence = UINavigationBarAppearance()
         apperearence.backgroundColor = UIColor(named: "secondaryColor")
-        apperearence.titleTextAttributes = [.foregroundColor: UIColor(named: "fontColor")!]
+        //apperearence.titleTextAttributes = [.foregroundColor: UIColor(named: "fontColor")!]
         
         //navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.standardAppearance = apperearence
