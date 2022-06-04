@@ -21,6 +21,15 @@ class CartVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let apperearence = UINavigationBarAppearance()
+        apperearence.backgroundColor = UIColor(named: "secondaryColor")
+        //apperearence.titleTextAttributes = [.foregroundColor: UIColor(named: "fontColor")!]
+        
+        //navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.standardAppearance = apperearence
+        navigationController?.navigationBar.compactAppearance = apperearence
+        navigationController?.navigationBar.scrollEdgeAppearance = apperearence
+        
         cartTableView.delegate = self
         cartTableView.dataSource = self
         
