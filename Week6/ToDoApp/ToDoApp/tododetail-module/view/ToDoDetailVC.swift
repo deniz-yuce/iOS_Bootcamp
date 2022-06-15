@@ -27,6 +27,10 @@ class ToDoDetailVC: UIViewController {
     @IBAction func buttonUpdate(_ sender: Any) {
         if let tc = tfToDo.text, let t = toDo {
             toDoDetailPresenterObject?.update(todo_id: t.todo_id!, todo_content: tc)
+            let alertYes = UIAlertController(title: "Updated", message: "", preferredStyle: .alert)
+            let okay = UIAlertAction(title: "Okay", style: .cancel) { action in }
+            alertYes.addAction(okay)
+            self.present(alertYes, animated: true)
         }
     }
 

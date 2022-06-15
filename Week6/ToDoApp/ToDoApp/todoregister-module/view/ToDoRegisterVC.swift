@@ -22,6 +22,10 @@ class ToDoRegisterVC: UIViewController {
     @IBAction func buttonAdd(_ sender: Any) {
         if let todo = tfToDo.text {
             toDoRegisterPresenterObject?.register(todo_content: todo)
+            let alertYes = UIAlertController(title: "Added", message: "", preferredStyle: .alert)
+            let okay = UIAlertAction(title: "Okay", style: .cancel) { action in }
+            alertYes.addAction(okay)
+            self.present(alertYes, animated: true)
         }
     }
     

@@ -95,6 +95,11 @@ extension HomePageVC : UITableViewDelegate, UITableViewDataSource {
             
             let yesAction = UIAlertAction(title: "Yes", style: .destructive) { action in
                 self.homePagePresenterObject?.delete(todo_id: toDo.todo_id!)
+                
+                let alertYes = UIAlertController(title: "Deleted", message: "", preferredStyle: .alert)
+                let okay = UIAlertAction(title: "Okay", style: .cancel) { action in }
+                alertYes.addAction(okay)
+                self.present(alertYes, animated: true)
             }
             alert.addAction(yesAction)
             self.present(alert, animated: true)
