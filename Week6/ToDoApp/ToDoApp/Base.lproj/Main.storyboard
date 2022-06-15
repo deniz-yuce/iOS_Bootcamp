@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,23 +25,23 @@
                                 <rect key="frame" x="0.0" y="191" width="414" height="671"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ToDoCell" id="URe-NB-UNL" customClass="TableViewCell" customModule="ToDoApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ToDoCell" rowHeight="80" id="URe-NB-UNL" customClass="TableViewCell" customModule="ToDoApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="URe-NB-UNL" id="g4u-PR-Lq3">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIb-FY-Y4J">
-                                                    <rect key="frame" x="177.5" y="35" width="59" height="30"/>
+                                                    <rect key="frame" x="52" y="25" width="59" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="AIb-FY-Y4J" firstAttribute="centerY" secondItem="g4u-PR-Lq3" secondAttribute="centerY" id="E1m-yo-g88"/>
-                                                <constraint firstItem="AIb-FY-Y4J" firstAttribute="centerX" secondItem="g4u-PR-Lq3" secondAttribute="centerX" id="n1q-tI-9pX"/>
+                                                <constraint firstItem="AIb-FY-Y4J" firstAttribute="centerY" secondItem="g4u-PR-Lq3" secondAttribute="centerY" id="bdW-yh-EwP"/>
+                                                <constraint firstItem="AIb-FY-Y4J" firstAttribute="leading" secondItem="g4u-PR-Lq3" secondAttribute="leadingMargin" constant="32" id="iy9-WX-mEm"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -64,6 +65,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="To-Do's" id="eMw-To-byE">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yp8-aT-ec7">
+                            <color key="tintColor" name="Navigation"/>
                             <connections>
                                 <segue destination="xIU-TJ-Zp4" kind="show" id="xGR-lq-PG1"/>
                             </connections>
@@ -87,7 +89,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Thing to do" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jUp-bn-pkg">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New To-Do" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jUp-bn-pkg">
                                 <rect key="frame" x="128" y="290" width="158" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="Pqf-9d-Fo1"/>
@@ -96,11 +98,17 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFF-ZB-Pd7">
-                                <rect key="frame" x="174" y="452" width="66.5" height="37"/>
+                                <rect key="frame" x="173.5" y="452" width="67.5" height="37"/>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ADD">
-                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ADD">
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Navigation"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonAdd:" destination="xIU-TJ-Zp4" eventType="touchUpInside" id="A3r-fI-EcB"/>
                                 </connections>
@@ -142,11 +150,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRT-eV-CJ1">
-                                <rect key="frame" x="155" y="452" width="104" height="37"/>
+                                <rect key="frame" x="154.5" y="452" width="105" height="37"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="UPDATE">
-                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <buttonConfiguration key="configuration" style="filled" title="UPDATE">
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Navigation"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonUpdate:" destination="bdK-Ha-V9E" eventType="touchUpInside" id="E9T-R2-wIW"/>
                                 </connections>
@@ -179,6 +192,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="b08-am-vi6">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="Navigation"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="Header"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -191,8 +208,17 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="Header">
+            <color red="0.80000000000000004" green="0.44705882352941173" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Navigation">
+            <color red="0.50980392156862742" green="0.12941176470588234" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
